@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерея космических изображений - планеты, звезды, космические исследования">
+    <meta name="author" content="Бушуев Дмитрий Константинович">
+    <title>Галерея - Космос</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-flex-container">
+            <div class="logo">
+                <h1>
+                    <i class="fas fa-images"></i>
+                    Фотогалерея
+                </h1>
+                <p class="logo-subtitle">
+                    Коллекция из <span id="count">0</span> космических изображений
+                </p>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-grid">
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" class="nav-link active">
+                            <i class="fas fa-camera"></i>
+                            Галерея
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="nav-link">
+                            <i class="fas fa-address-book"></i>
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="count-stats">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i>
+                    Сетка
+                </button>
+                <button id="list-view" class="view-btn">
+                    <i class="fas fa-list"></i>
+                    Список
+                </button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    Все
+                </button>
+                <button class="filter-btn" data-filter="Planets">
+                    Планеты
+                </button>
+                <button class="filter-btn" data-filter="Stars">
+                    Звёзды
+                </button>
+                <button class="filter-btn" data-filter="Explorations">
+                    Исследования
+                </button>
+                <button class="filter-btn" data-filter="Wonders">
+                    Чудеса
+                </button>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="image-gallery"></div>
+
+        <aside class="facts-section">
+            <h3>
+                <i class="fas fa-lightbulb"></i>
+                Интересные факты о космосе
+            </h3>
+            <div class="facts-grid"></div>
+        </aside>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-flex-container">
+            <div class="footer-col">
+                <h4><i class="fas fa-rocket"></i>
+                    О проекте
+                </h4>
+                <p>
+                    Сайт создан в образовательных целях.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-link"></i>
+                    Быстрые ссылки
+                </h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">
+                            Галерея
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-share-alt"></i>
+                    Социальные сети
+                </h4>
+                <div class="footer-social">
+                    <a href="https://t.me/" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://vk.com/" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://discord.com/" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year">2026</span> Бушуев Дмитрий Константинович. Все права защищены
+            </p>
+        </div>
+    </footer>
+
+    <nav class="sidenav" id="sidenav"><ul></ul></nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery-data.js"></script>
+    <script src="js/facts-data.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

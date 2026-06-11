@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Бушуев Дмитрий Константинович">
+    <title>Контакты - Космос</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-flex-container">
+            <div class="logo">
+                <h1>
+                    <i class="fas fa-address-book"></i>
+                    Контакты
+                </h1>
+                <p class="logo-subtitle">
+                    Свяжитесь с автором сайта
+                </p>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-grid">
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" class="nav-link">
+                            <i class="fas fa-camera"></i>
+                            Галерея
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="nav-link active">
+                            <i class="fas fa-address-book"></i>
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contacts-container">
+        <div class="contacts-layout">
+            <section class="contact-section">
+                <h2 class="section-title">
+                    <i class="fas fa-user-astronaut"></i>
+                    Информация о разработчике
+                </h2>
+                <div class="developer-header">
+                    <div class="avatar">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="developer-name">
+                        <h3>
+                            Бушуев Дмитрий Константинович
+                        </h3>
+                        <p>
+                            Веб-разработчик, специалист по космической тематике, научный популяризатор
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-item-label">
+                                Email
+                            </span>
+                            <span class="contact-item-value">
+                                <a href="mailto:dimonbushikwork@gmail.com">
+                                    dimonbushikwork@gmail.com
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-item-label">
+                                Специализация
+                            </span>
+                            <span class="contact-item-value">
+                                Веб-разработка, космическая тематика
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-item-label">Местоположение</span>
+                            <span class="contact-item-value">Россия, Москва</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-item-content">
+                            <span class="contact-item-label">Часовой пояс</span>
+                            <span class="contact-item-value">МСК (UTC+3)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h3 class="social-title">
+                        <i class="fas fa-share-alt"></i> Социальные сети и мессенджеры</h3>
+                    <div class="social-links">
+                        <a href="https://t.me/@Demon3669" class="social-link" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://vk.com/id584730456" class="social-link" target="_blank">
+                            <i class="fab fa-vk"></i>
+                            <span>ВКонтакте</span>
+                        </a>
+                        <a href="https://github.com/Demon3669" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2 class="section-title">
+                    <i class="fas fa-comment-dots"></i> Форма обратной связи
+                </h2>
+                <div class="form-header">
+                    <p class="form-description">Заполните форму, чтобы задать вопрос, предложить сотрудничество или оставить отзыв о сайте</p>
+                </div>
+                <form id="feedbackForm" class="feedback-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label"><i class="fas fa-user"></i> Имя <span class="required-marker">*</span></label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="Введите ваше имя">
+                            <div class="form-hint"><i class="fas fa-info-circle"></i> Обязательное поле</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email <span class="required-marker">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="example@mail.com">
+                            <div class="form-hint"><i class="fas fa-info-circle"></i> Введите действующий email для ответа</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label"><i class="fas fa-tag"></i> Тема сообщения</label>
+                        <select id="subject" name="subject" class="form-select">
+                            <option value="" selected disabled>Выберите тему сообщения</option>
+                            <option value="question">Вопрос по космической теме</option>
+                            <option value="collaboration">Предложение о сотрудничестве</option>
+                            <option value="feedback">Отзыв о сайте</option>
+                            <option value="bug">Сообщение об ошибке</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label"><i class="fas fa-edit"></i> Сообщение <span class="required-marker">*</span></label>
+                        <textarea id="message" name="message" class="form-textarea" required placeholder="Опишите ваш вопрос..." rows="6" maxlength="500"></textarea>
+                        <div class="form-hint"><i class="fas fa-info-circle"></i> Максимальная длина: 500 символов</div>
+                        <div class="char-counter"><span id="charCount">0</span>/500 символов</div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="agreement" name="agreement" class="form-checkbox" required>
+                        <label for="agreement" class="checkbox-label">Я согласен на обработку моих персональных данных <span class="required-marker">*</span></label>
+                    </div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Отправить сообщение</button>
+                </form>
+            </section>
+
+            <section class="contact-section">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> Дополнительная информация</h2>
+                <div class="info-grid">
+                    <div class="info-block">
+                        <h3 class="info-block-title"><i class="fas fa-clock"></i> График работы и ответов</h3>
+                        <div class="schedule-list">
+                            <div class="schedule-item"><span class="day">Понедельник - Пятница</span><span class="time">16:00 - 19:00</span></div>
+                            <div class="schedule-item"><span class="day">Суббота</span><span class="time">15:00 - 18:00</span></div>
+                            <div class="schedule-item"><span class="day">Воскресенье</span><span class="time">Выходной</span></div>
+                        </div>
+                        <p class="note">Ответ на письма приходит до двух недель</p>
+                    </div>
+                    <div class="info-block">
+                        <h3 class="info-block-title"><i class="fas fa-question-circle"></i> Часто задаваемые вопросы</h3>
+                        <div class="faq-list">
+                            <div class="faq-item"><div class="faq-question" tabindex="0">Можно ли использовать материалы с сайта?</div><div class="faq-answer">Да, материалы доступны для некоммерческого использования с указанием источника.</div></div>
+                            <div class="faq-item"><div class="faq-question" tabindex="0">Как часто обновляется содержимое сайта?</div><div class="faq-answer">Новые материалы добавляются по мере поступления новой информации.</div></div>
+                            <div class="faq-item"><div class="faq-question" tabindex="0">Откуда берутся материалы?</div><div class="faq-answer">Материалы берутся из свободных источников с соблюдением авторских прав.</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instruction-block">
+                    <h3 class="info-block-title"><i class="fas fa-lightbulb"></i> Инструкция по эффективному общению</h3>
+                    <ol class="instruction-list">
+                        <li>Для срочных вопросов используйте Google-почту: <strong>dimonbushikwork@gmail.com</strong></li>
+                        <li>В теме письма указывайте "Космос: [краткая тема]"</li>
+                        <li>При вопросах, требующих проверки, прикладывайте ссылки на источники</li>
+                        <li>Для предложений о сотрудничестве подробно опишите детали проекта</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-flex-container">
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-rocket"></i> О проекте
+                </h4>
+                    <p>Сайт создан в образовательных целях для изучения космоса и современных web-технологий.</p>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-link"></i> Быстрые ссылки
+                </h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-share-alt"></i> Социальные сети
+                </h4>
+                <div class="footer-social">
+                    <a href="https://t.me/" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://vk.com/" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://github.com/Demon3669" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> Бушуев Дмитрий Константинович. Все права защищены</p><p class="footer-note">Сайт создан в образовательных целях</p>
+        </div>
+    </footer>
+
+    <nav class="sidenav" id="sidenav">
+        <ul></ul>
+    </nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>

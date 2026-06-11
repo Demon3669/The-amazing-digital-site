@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт о космосе: структурированная теория по планетам, звёздам, исследованиям и чудесам Вселенной">
+    <meta name="keywords" content="космос, планеты, звезды, галактика, вселенная, солнечная система, теория">
+    <meta name="author" content="Бушуев Дмитрий Константинович">
+    <title>Космос</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>
+                    <i class="fas fa-rocket"></i>
+                    Добро пожаловать в открытый космос!
+                </h1>
+                <p class="logo-subtitle">Давайте вместе изучать тайны космоса 💙</p>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-grid">
+                    <li>
+                        <a href="index.html" class="nav-link active">
+                            <i class="fas fa-home"></i>
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" class="nav-link">
+                            <i class="fas fa-camera"></i>
+                            Галерея
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="nav-link">
+                            <i class="fas fa-address-book"></i>
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="topics-nav" aria-label="Навигация по темам">
+                <ul class="topics-grid">
+                    <li>
+                        <a href="#planets" class="topic-link">
+                            <i class="fas fa-globe"></i>
+                            <span>Планеты</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#stars" class="topic-link">
+                            <i class="fas fa-star"></i>
+                            <span>Звёзды</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#explorations" class="topic-link">
+                            <i class="fas fa-rocket"></i>
+                            <span>Исследования</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#wonders" class="topic-link">
+                            <i class="fas fa-meteor"></i>
+                            <span>Чудеса</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h2>
+                <i class="fas fa-question-circle"></i>
+                О чём этот сайт?
+            </h2>
+            <div class="intro-content">
+                <p>
+                    Этот сайт — Ваш гид по космосу. Для каждого изображения в <strong>галерее</strong> мы подготовили структурированную теорию: от планет Солнечной системы до далёких звёзд и космических исследований.
+                </p>
+                <a href="gallery.html" class="gallery-link">
+                    <i class="fas fa-images"></i>
+                    Перейти в галерею с изображениями
+                </a>
+            </div>
+        </section>
+
+        <section id="planets" class="content-section">
+            <div class="category-header">
+                <h2>
+                    <i class="fas fa-globe"></i>
+                    Планеты и малые тела
+                </h2>
+                <span class="category-count" id="planets-count"></span>
+            </div>
+            <div id="planets-container"></div>
+        </section>
+
+        <section id="stars" class="content-section">
+            <div class="category-header">
+                <h2>
+                    <i class="fas fa-star"></i>
+                    Звёзды и созвездия
+                </h2>
+                <span class="category-count" id="stars-count"></span>
+            </div>
+            <div id="stars-container"></div>
+        </section>
+
+        <section id="explorations" class="content-section">
+            <div class="category-header">
+                <h2>
+                    <i class="fas fa-rocket"></i>
+                    Исследования космоса
+                </h2>
+                <span class="category-count" id="explorations-count"></span>
+            </div>
+            <div id="explorations-container"></div>
+        </section>
+
+        <section id="wonders" class="content-section">
+            <div class="category-header">
+                <h2>
+                    <i class="fas fa-meteor"></i>
+                    Чудеса Вселенной
+                </h2>
+                <span class="category-count" id="wonders-count"></span>
+            </div>
+            <div id="wonders-container"></div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-flex-container">
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-rocket"></i>
+                    О проекте
+                </h4>
+                <p>
+                    Сайт создан в образовательных целях для изучения космоса и современных web-технологий.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-link"></i>
+                    Быстрые ссылки
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#planets">Планеты</a></li>
+                    <li><a href="#stars">Звёзды</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <i class="fas fa-share-alt"></i>
+                    Социальные сети
+                </h4>
+                <div class="footer-social">
+                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://vk.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year">2026</span> Бушуев Дмитрий Константинович. Все права защищены
+            </p>
+            <p class="footer-note">Сайт создан в образовательных целях</p>
+            <div class="footer-icons">
+                <a href="gallery.html" title="Галерея">
+                    <i class="fas fa-images"></i>
+                </a>
+                <a href="#planets" title="Планеты">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <a href="#stars" title="Звёзды">
+                    <i class="fas fa-star"></i>
+                </a>
+                <a href="contacts.html" title="Контакты">
+                    <i class="fas fa-address-book"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="sidenav" id="sidenav"><ul></ul></nav>
+
+    <script src="js/main.js"></script>
+    <script src="js/theory.js"></script>
+</body>
+</html>
